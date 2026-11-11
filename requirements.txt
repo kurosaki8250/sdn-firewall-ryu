@@ -1,0 +1,14 @@
+# Runtime dependencies for the Ryu controller.
+#
+# Ryu 4.34's setup.py uses setuptools' easy_install API, removed in
+# setuptools 58. Install with:
+#
+#   python3 -m pip install "setuptools<58" "pbr==5.11.1" wheel
+#   python3 -m pip install --no-build-isolation -r requirements.txt
+#   python3 tools/patch_ryu_wsgi.py
+#
+# eventlet is pinned to the last release Ryu 4.34 works with, and dnspython is
+# pinned because eventlet 0.33.3 breaks on dnspython 1.x under Python 3.10.
+ryu==4.34
+eventlet==0.33.3
+dnspython==2.1.0
