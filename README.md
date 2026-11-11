@@ -125,7 +125,7 @@ WSL2's kernel ships the `openvswitch` module that Mininet needs. Double-click
 **`Run Demo.bat`**, or:
 
 ```powershell
-wsl --cd "C:\Users\purus\OneDrive\Desktop\SDN-Firewall" -d Ubuntu-22.04 -- bash run.sh
+wsl --cd "<path to this folder>" -d Ubuntu-22.04 -- bash run.sh
 ```
 
 `run.sh` installs anything missing, patches Ryu for modern eventlet, and runs

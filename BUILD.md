@@ -33,7 +33,7 @@ needs. Docker Desktop is more convenient but its kernel may not provide it.
 Double-click **`Run Demo.bat`** in this folder, or from PowerShell:
 
 ```powershell
-wsl --cd "C:\Users\purus\OneDrive\Desktop\SDN-Firewall" -d Ubuntu-22.04 -- bash run.sh
+wsl --cd "<path to this folder>" -d Ubuntu-22.04 -- bash run.sh
 ```
 
 `run.sh` installs anything missing, patches Ryu for modern eventlet, and runs
